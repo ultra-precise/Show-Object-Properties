@@ -13,10 +13,11 @@
 </form>
 
 <script>
-var yourobj = document.querySelector("#name");
-var sub = document.querySelector("submit");
+
+var sub = document.forms[0].querySelector('input[type="submit"]');
 sub.addEventListener("click", function (e){
-var a = yourobj.textContent;
+  
+var a = document.querySelector("#name").value;
   return a;
 });
                      
