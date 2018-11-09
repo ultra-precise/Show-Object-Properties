@@ -15,7 +15,9 @@
 <script>
 var a;
   var sub = document.querySelector("#subz");
-sub.onclick = function (){
+  sub.addEventListener("click", abc(e));
+function abc(e){
+  e.target.preventDefault();
 a = document.querySelector("#name").value;              
   alert(a);
 var ht = document.querySelector("html");
