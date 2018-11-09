@@ -13,15 +13,13 @@
 </form>
 
 <script>
-var a;
+
 var sub = document.forms[0].querySelector('input[type="submit"]');
-sub.addEventListener("click", function (e){
-  
-a = document.querySelector("#name").value;
+sub.onclick = function (){
+  var a = document.querySelector("#name").value;              
   return a;
-});
-                     
-                     
+}
+
                      
   
 var ht = document.querySelector("html");
