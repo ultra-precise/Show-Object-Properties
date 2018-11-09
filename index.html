@@ -14,10 +14,11 @@
 
 <script>
 var a = null;
-var sub = document.forms[0].querySelector('input[type="submit"]');
+var sub = document.forms[0].querySelector('input[value="submit"]');
 sub.onclick = function (){
   a = document.querySelector("#name").value;              
   return a;
+  alert(a);
 };
 
                      
