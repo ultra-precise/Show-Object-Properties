@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="" method="get" class="form-example">
+  <div class="form-example">
+    <label for="name">Enter Object: </label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <div class="form-example">
+    <input type="submit" value="Subscribe!">
+  </div>
+</form>
+
+<script>
+var yourobj = document.querySelector("#name");
+var a = yourobj.value;
+var ht = document.querySelector("html");
+var propertiesList = document.createElement("ul");
+
+var c = [];
+for (let b in a) {
+c.push(b);
+}
+
+c.sort().forEach(function(d){
+
+var singleProperty = document.createElement("li");
+var spanz = document.createElement("span");
+spanz.setAttribute('style', 'color:SALMON;');
+
+spanz.textContent = d;
+var tn = document.createTextNode(" = " + a[d]);
+
+singleProperty.appendChild(spanz);
+singleProperty.appendChild(tn);
+propertiesList.appendChild(singleProperty);
+
+});
+
+ht.insertBefore(propertiesList, ht.firstChild);
+
+
+</script>
+
+
+</body>
+</html>
