@@ -8,17 +8,18 @@
     <input type="text" name="name" id="name" required>
   </div>
   <div class="form-example">
-    <input type="submit" value="Subscribe!">
+    <input type="submit" value="Subscribe!" id="subz">
   </div>
 </form>
 
 <script>
-var a = null;
-var sub = document.forms[0].querySelector('input[value="Subscribe!"]');
+var a;
+  var sub = document.querySelector("#subz");
 sub.onclick = function (){
-  a = document.querySelector("#name").value;              
-  return a;
+a = document.querySelector("#name").value;              
   alert(a);
+  return a;
+  
 };
 
                      
