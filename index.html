@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
-  
-  <script contenteditable=true style="display:block">
+  <p>Edit below and type any object at the right hand side of equal operator:</p>
+  <script contenteditable=true style="display:block, border:1px solid orange;" id="op">
   TypeYourObjectHere = window;
   </script>
-  <button id='subz'>BUTTON</button>
+  <button id='subz'>Show Me Object Properties</button>
 
 <script>
+  document.querySelector('#op').click();
 var a, TypeYourObjectHere;
   a = TypeYourObjectHere;
   var sub = document.querySelector("#subz");
