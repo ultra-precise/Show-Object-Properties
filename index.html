@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <p>Edit below and type any object at the right hand side of equal operator:</p>
-  <script contenteditable=true onchange="abc(e);" style="display:block; border:1px solid orange; border-radius:4px;" id="op">
-    
-  TypeYourObjectHere = window;
-      
-  </script>
-  <button id='subz'>Show Me Object Properties</button>
+<input id='op' type="text">
+  <input type="submit" id='subz' value="Show Me Object Properties">
 <div id='subk'><div></div></div>
 <script>
   document.querySelector('#op').focus();
-var a, TypeYourObjectHere;
-  
+
   var sub = document.querySelector("#subz");
   sub.addEventListener("click", abc);
+  var w;
+  var a;
 function abc(e){
-  //e.preventDefault();
-      
-  a = TypeYourObjectHere;
+  e.preventDefault();
+      var w = document.querySelector("#op").value;
+  var a = this[w];
+  
 var ht = document.querySelector("#subk");
 var propertiesList = document.createElement("ul");
 
