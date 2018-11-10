@@ -1,1 +1,10 @@
-This small script shows all the properties' names of an Object, including the current value of each property.
+
+Showing all the properties of any provided object ("a"),
+Example:
+
+var a = window; // shows all the properties of window object
+var a = document // shows all the properties of document object
+var a = {
+x: 5,
+y: "method"
+}; // shows all the properties of object literal "a"
