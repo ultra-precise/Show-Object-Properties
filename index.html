@@ -2,10 +2,10 @@
 <html>
 <body>
   <p>Edit below and type any object at the right hand side of equal operator:</p>
-  <script contenteditable=true style="display:block; border:1px solid orange; border-radius:4px;" id="op">
-    function o(){
+  <script contenteditable=true onchange="abc(e);" style="display:block; border:1px solid orange; border-radius:4px;" id="op">
+    
   TypeYourObjectHere = window;
-      }
+      
   </script>
   <button id='subz'>Show Me Object Properties</button>
 <div id='subk'><div></div></div>
@@ -17,7 +17,7 @@ var a, TypeYourObjectHere;
   sub.addEventListener("click", abc);
 function abc(e){
   //e.preventDefault();
-      o();
+      
   a = TypeYourObjectHere;
 var ht = document.querySelector("#subk");
 var propertiesList = document.createElement("ul");
