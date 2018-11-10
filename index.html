@@ -2,22 +2,20 @@
 <html>
 <body>
 
-<form action="" method="get" class="form-example">
-  <div class="form-example">
+<form class="form-example">
+  
     <label for="name">Enter Object: </label>
     <input type="text" name="name" id="name" required>
-  </div>
-  <div class="form-example">
     <input type="submit" value="Subscribe!" id="subz">
-  </div>
+  
 </form>
 
 <script>
 var a;
   var sub = document.querySelector("#subz");
   sub.addEventListener("click", abc);
-function abc(e){
-  e.target.preventDefault();
+function abc(){
+ // e.target.preventDefault();
 a = document.querySelector("#name").value;              
   alert(a);
 var ht = document.querySelector("html");
