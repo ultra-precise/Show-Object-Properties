@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <button id='subz'>BUTTON</button>
-<script contenteditable=true style="display:block">;
-  a = window;
+  
+  <script contenteditable=true style="display:block">
+  TypeYourObjectHere = window;
   </script>
+  <button id='subz'>BUTTON</button>
+
 <script>
-var a;
+var a, TypeYourObjectHere;
+  a = TypeYourObjectHere;
   var sub = document.querySelector("#subz");
   sub.addEventListener("click", abc);
 function abc(e){
