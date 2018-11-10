@@ -1,5 +1,5 @@
 
-This script will show all the properties of any provided object ("a")  
+This script will show all the properties of any given object ("a")  
   
 Example :
 ```js
