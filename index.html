@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html>
-<body>
-<input id='op' type="text">
-  <input type="submit" id='subz' value="Show Me Object Properties">
-<div id='subk'><div></div></div>
-<script>
-  document.querySelector('#op').focus();
+  <body>
 
-  var sub = document.querySelector("#subz");
-  sub.addEventListener("click", abc);
-  var w;
-  var a;
-function abc(e){
-  e.preventDefault();
-      var w = document.querySelector("#op").value;
-  var a = window[w];
-  
-var ht = document.querySelector("#subk");
+
+var a = window;
+    
+    
+    
+var ht = document.querySelector("body");
 var propertiesList = document.createElement("ul");
 
 var c = [];
@@ -41,15 +32,7 @@ propertiesList.appendChild(singleProperty);
 
 ht.insertBefore(propertiesList, ht.firstChild);
 
-  
-};
-
-                     
-  
 
 
-</script>
-
-
-</body>
-</html>
+  </body>
+  </html>
